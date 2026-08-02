@@ -1,6 +1,7 @@
 import {
   FaGithub,
   FaLinkedin,
+  FaArrowRight,
 } from "react-icons/fa";
 
 import {
@@ -8,7 +9,6 @@ import {
 } from "react-icons/hi";
 
 import SectionTitle from "./ui/SectionTitle";
-
 import resume from "../assets/resume/Risha-Hermain-Resume.pdf";
 
 function Contact() {
@@ -17,43 +17,56 @@ function Contact() {
       id="contact"
       className="py-28 bg-[#FFFDFB]"
     >
-      <div className="max-w-5xl mx-auto px-6">
+      <div className="max-w-4xl mx-auto px-6">
 
         <SectionTitle
           subtitle="GET IN TOUCH"
           title="Let's Build Something Amazing Together"
         />
 
-        <div className="bg-white rounded-[32px] shadow-xl border border-orange-100 p-12">
+        <div className="bg-white rounded-[32px] shadow-xl border border-orange-100 p-8 md:p-12">
 
-          <p className="text-center text-slate-600 text-lg leading-8 max-w-3xl mx-auto">
-
+          <p className="text-center text-slate-600 text-lg leading-8 max-w-2xl mx-auto">
             I'm currently open to Software Developer roles,
             internships and exciting opportunities.
             Whether you have a project, collaboration or
             just want to connect, I'd love to hear from you.
-
           </p>
 
-          <div className="grid md:grid-cols-3 gap-6 mt-14">
+          <div className="mt-12 space-y-5">
 
             {/* Email */}
 
-            <div className="rounded-3xl bg-orange-50 p-8 text-center hover:-translate-y-2 transition-all duration-300">
+            <a
+              href="mailto:rishahermain39@gmail.com"
+              className="group flex items-center justify-between rounded-2xl bg-orange-50 hover:bg-orange-100 p-6 transition-all duration-300"
+            >
 
-              <HiOutlineMail
-                className="mx-auto text-4xl text-orange-500"
-              />
+              <div className="flex items-center gap-5">
 
-              <h3 className="mt-5 text-xl font-bold text-slate-800">
-                Email
-              </h3>
+                <div className="w-14 h-14 rounded-2xl bg-white flex items-center justify-center shadow">
 
-              <p className="mt-3 text-slate-600">
-                rishahermain39@gmail.com
-              </p>
+                  <HiOutlineMail className="text-3xl text-orange-500" />
 
-            </div>
+                </div>
+
+                <div>
+
+                  <h3 className="text-xl font-semibold text-slate-800">
+                    Email
+                  </h3>
+
+                  <p className="text-slate-600 break-all">
+                    rishahermain39@gmail.com
+                  </p>
+
+                </div>
+
+              </div>
+
+              <FaArrowRight className="text-orange-500 group-hover:translate-x-2 transition" />
+
+            </a>
 
             {/* LinkedIn */}
 
@@ -61,20 +74,32 @@ function Contact() {
               href="https://www.linkedin.com/in/risha-hermain-5a7861326"
               target="_blank"
               rel="noreferrer"
-              className="rounded-3xl bg-blue-50 p-8 text-center hover:-translate-y-2 transition-all duration-300"
+              className="group flex items-center justify-between rounded-2xl bg-blue-50 hover:bg-blue-100 p-6 transition-all duration-300"
             >
 
-              <FaLinkedin
-                className="mx-auto text-4xl text-blue-600"
-              />
+              <div className="flex items-center gap-5">
 
-              <h3 className="mt-5 text-xl font-bold text-slate-800">
-                LinkedIn
-              </h3>
+                <div className="w-14 h-14 rounded-2xl bg-white flex items-center justify-center shadow">
 
-              <p className="mt-3 text-slate-600">
-                Connect with me
-              </p>
+                  <FaLinkedin className="text-3xl text-blue-600" />
+
+                </div>
+
+                <div>
+
+                  <h3 className="text-xl font-semibold text-slate-800">
+                    LinkedIn
+                  </h3>
+
+                  <p className="text-slate-600">
+                    Connect with me
+                  </p>
+
+                </div>
+
+              </div>
+
+              <FaArrowRight className="text-blue-600 group-hover:translate-x-2 transition" />
 
             </a>
 
@@ -84,39 +109,45 @@ function Contact() {
               href="https://github.com/rishahermain7-eng"
               target="_blank"
               rel="noreferrer"
-              className="rounded-3xl bg-slate-100 p-8 text-center hover:-translate-y-2 transition"
+              className="group flex items-center justify-between rounded-2xl bg-slate-100 hover:bg-slate-200 p-6 transition-all duration-300"
             >
 
-              <FaGithub
-                className="mx-auto text-4xl text-slate-800"
-              />
+              <div className="flex items-center gap-5">
 
-              <h3 className="mt-5 text-xl font-bold text-slate-800">
-                GitHub
-              </h3>
+                <div className="w-14 h-14 rounded-2xl bg-white flex items-center justify-center shadow">
 
-              <p className="mt-3 text-slate-600">
-                View my repositories
-              </p>
+                  <FaGithub className="text-3xl text-slate-800" />
+
+                </div>
+
+                <div>
+
+                  <h3 className="text-xl font-semibold text-slate-800">
+                    GitHub
+                  </h3>
+
+                  <p className="text-slate-600">
+                    View my repositories
+                  </p>
+
+                </div>
+
+              </div>
+
+              <FaArrowRight className="text-slate-700 group-hover:translate-x-2 transition" />
 
             </a>
 
           </div>
 
-          {/* Resume */}
-
-          <div className="flex justify-center mt-14">
-
-            <a
-              href={resume}
-              target="_blank"
-              rel="noreferrer"
-              className="px-8 py-4 rounded-2xl bg-gradient-to-r from-orange-400 to-pink-500 text-white font-semibold hover:scale-105 transition"
-            >
-              Download Resume
-            </a>
-
-          </div>
+          <a
+            href={resume}
+            target="_blank"
+            rel="noreferrer"
+            className="mt-12 w-full inline-flex justify-center items-center py-4 rounded-2xl bg-gradient-to-r from-orange-400 to-pink-500 text-white font-semibold hover:scale-[1.02] transition"
+          >
+            Download Resume
+          </a>
 
         </div>
 
