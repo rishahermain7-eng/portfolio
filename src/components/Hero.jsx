@@ -53,7 +53,7 @@ function Hero() {
               href={resume}
               target="_blank"
             >
-              Download Resume
+              My Resume
             </Button>
 
             <Button

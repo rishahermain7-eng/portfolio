@@ -44,7 +44,7 @@ function Contact() {
 
               <div className="flex items-center gap-5">
 
-                <div className="w-14 h-14 rounded-2xl bg-white flex items-center justify-center shadow">
+                <div className="w-20 h-20 rounded-3xl bg-white shadow-md flex items-center justify-center shrink-0">
 
                   <HiOutlineMail className="text-3xl text-orange-500" />
 
@@ -56,7 +56,7 @@ function Contact() {
                     Email
                   </h3>
 
-                  <p className="text-slate-600 break-all">
+                  <p className="text-slate-600 text-sm truncate md:whitespace-normal">
                     rishahermain39@gmail.com
                   </p>
 
@@ -79,7 +79,7 @@ function Contact() {
 
               <div className="flex items-center gap-5">
 
-                <div className="w-14 h-14 rounded-2xl bg-white flex items-center justify-center shadow">
+                <div className="w-20 h-20 rounded-3xl bg-white shadow-md flex items-center justify-center shrink-0">
 
                   <FaLinkedin className="text-3xl text-blue-600" />
 
@@ -114,7 +114,7 @@ function Contact() {
 
               <div className="flex items-center gap-5">
 
-                <div className="w-14 h-14 rounded-2xl bg-white flex items-center justify-center shadow">
+                <div className="w-20 h-20 rounded-3xl bg-white shadow-md flex items-center justify-center shrink-0">
 
                   <FaGithub className="text-3xl text-slate-800" />
 
@@ -139,15 +139,6 @@ function Contact() {
             </a>
 
           </div>
-
-          <a
-            href={resume}
-            target="_blank"
-            rel="noreferrer"
-            className="mt-12 w-full inline-flex justify-center items-center py-4 rounded-2xl bg-gradient-to-r from-orange-400 to-pink-500 text-white font-semibold hover:scale-[1.02] transition"
-          >
-            Download Resume
-          </a>
 
         </div>
 
