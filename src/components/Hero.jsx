@@ -1,6 +1,5 @@
 import avatar from "../assets/images/avatar.png";
 import Button from "./ui/Button";
-
 import resume from "../assets/resume/Risha-Hermain-Resume.pdf";
 
 function Hero() {
@@ -33,11 +32,11 @@ function Hero() {
             Hello, I'm
           </p>
 
-          <h1 className="text-6xl lg:text-7xl font-extrabold mt-4 leading-tight text-slate-900">
+          <h1 className="text-5xl sm:text-6xl lg:text-7xl font-extrabold mt-4 leading-tight text-slate-900">
             Risha Hermain
           </h1>
 
-          <h2 className="text-3xl mt-6 text-slate-700">
+          <h2 className="text-2xl lg:text-3xl mt-6 text-slate-700">
             Full Stack Developer
           </h2>
 
@@ -47,7 +46,7 @@ function Hero() {
             web technologies.
           </p>
 
-          <div className="flex gap-5 mt-10">
+          <div className="flex flex-wrap gap-5 mt-10">
 
             <Button
               href={resume}
@@ -73,23 +72,44 @@ function Hero() {
 
           {/* Glow */}
 
-          <div className="absolute w-[430px] h-[430px] rounded-full bg-orange-200 blur-[110px] opacity-40"></div>
+          <div className="absolute w-[260px] h-[260px] md:w-[430px] md:h-[430px] rounded-full bg-orange-200 blur-[90px] md:blur-[110px] opacity-40"></div>
 
           {/* Speech Bubble */}
 
-          <div className="absolute top-5 left-0 bg-white rounded-3xl shadow-xl border border-orange-100 px-7 py-5 z-20">
+          <div
+            className="
+            absolute
+            top-0
+            left-2
+            md:top-5
+            md:left-0
+            bg-white
+            rounded-2xl
+            md:rounded-3xl
+            shadow-xl
+            border
+            border-orange-100
+            px-4
+            py-3
+            md:px-7
+            md:py-5
+            z-20
+            max-w-[165px]
+            md:max-w-[220px]
+          "
+          >
 
-            <h3 className="text-2xl font-bold text-slate-800">
+            <h3 className="text-xl md:text-2xl font-bold text-slate-800">
               Hello! 👋
             </h3>
 
-            <p className="text-slate-500 mt-2 leading-7">
+            <p className="text-sm md:text-base text-slate-500 mt-2 leading-6">
               Let's explore
               <br />
               my portfolio.
             </p>
 
-            <div className="absolute bottom-[-8px] left-10 w-5 h-5 bg-white rotate-45 border-r border-b border-orange-100"></div>
+            <div className="absolute bottom-[-8px] left-8 md:left-10 w-4 h-4 md:w-5 md:h-5 bg-white rotate-45 border-r border-b border-orange-100"></div>
 
           </div>
 
@@ -98,7 +118,16 @@ function Hero() {
           <img
             src={avatar}
             alt="Developer Avatar"
-            className="avatar relative z-10 w-full max-w-[650px] object-contain"
+            className="
+              relative
+              z-10
+              w-[280px]
+              sm:w-[340px]
+              md:w-[450px]
+              lg:w-[520px]
+              xl:w-[600px]
+              object-contain
+            "
           />
 
         </div>
