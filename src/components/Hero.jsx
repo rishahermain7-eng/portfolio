@@ -67,67 +67,58 @@ function Hero() {
         </div>
 
         {/* RIGHT */}
-
-        <div className="relative flex justify-center items-center">
+        <div className="relative flex justify-center items-center mt-10 lg:mt-0">
 
           {/* Glow */}
-
-          <div className="absolute w-[260px] h-[260px] md:w-[430px] md:h-[430px] rounded-full bg-orange-200 blur-[90px] md:blur-[110px] opacity-40"></div>
+          <div className="absolute w-[260px] h-[260px] sm:w-[330px] sm:h-[330px] lg:w-[430px] lg:h-[430px]
+                          rounded-full bg-orange-200 blur-[90px] lg:blur-[110px] opacity-40">
+          </div>
 
           {/* Speech Bubble */}
-
           <div
             className="
-            absolute
-            top-0
-            left-2
-            md:top-5
-            md:left-0
-            bg-white
-            rounded-2xl
-            md:rounded-3xl
-            shadow-xl
-            border
-            border-orange-100
-            px-4
-            py-3
-            md:px-7
-            md:py-5
-            z-20
-            max-w-[165px]
-            md:max-w-[220px]
-          "
+              absolute
+              top-2 left-2
+              sm:top-4 sm:left-4
+              lg:top-6 lg:left-0
+              bg-white
+              rounded-3xl
+              shadow-xl
+              border border-orange-100
+              px-5 py-4
+              sm:px-6 sm:py-5
+              z-20
+            "
           >
 
-            <h3 className="text-xl md:text-2xl font-bold text-slate-800">
+            <h3 className="text-xl sm:text-2xl font-bold">
               Hello! 👋
             </h3>
 
-            <p className="text-sm md:text-base text-slate-500 mt-2 leading-6">
+            <p className="text-slate-500 mt-2 leading-7">
               Let's explore
               <br />
               my portfolio.
             </p>
 
-            <div className="absolute bottom-[-8px] left-8 md:left-10 w-4 h-4 md:w-5 md:h-5 bg-white rotate-45 border-r border-b border-orange-100"></div>
+            <div className="absolute bottom-[-8px] left-10 w-5 h-5 bg-white rotate-45 border-r border-b border-orange-100"></div>
 
           </div>
 
           {/* Avatar */}
 
           <img
-            src={avatar}
-            alt="Developer Avatar"
-            className="
-              relative
-              z-10
-              w-[280px]
-              sm:w-[340px]
-              md:w-[450px]
-              lg:w-[520px]
-              xl:w-[600px]
+              src={avatar}
+              alt=""
+              className="
+              relative z-10
+              w-[270px]
+              sm:w-[360px]
+              md:w-[430px]
+              lg:w-[540px]
+              xl:w-[620px]
               object-contain
-            "
+              "
           />
 
         </div>

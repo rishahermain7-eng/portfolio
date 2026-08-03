@@ -37,36 +37,34 @@ function Contact() {
 
             {/* Email */}
 
-            <a
-              href="mailto:rishahermain39@gmail.com"
-              className="group flex items-center justify-between rounded-2xl bg-orange-50 hover:bg-orange-100 p-6 transition-all duration-300"
-            >
+            <a href="mailto:rishahermain39@gmail.com"
+            className="group flex items-center rounded-2xl bg-orange-50 hover:bg-orange-100 p-5 sm:p-6 transition-all duration-300">
 
-              <div className="flex items-center gap-5">
+            <div className="w-20 h-20 rounded-3xl bg-white shadow-md flex items-center justify-center shrink-0">
 
-                <div className="w-20 h-20 rounded-3xl bg-white shadow-md flex items-center justify-center shrink-0">
+              <HiOutlineMail className="text-3xl text-orange-500" />
 
-                  <HiOutlineMail className="text-3xl text-orange-500" />
+            </div>
 
-                </div>
+            <div className="ml-5 flex-1 min-w-0">
 
-                <div>
+              <h3 className="text-xl font-semibold text-slate-800">
+                Email
+              </h3>
 
-                  <h3 className="text-xl font-semibold text-slate-800">
-                    Email
-                  </h3>
+              <p className="text-slate-600 text-sm sm:text-base break-all">
+                rishahermain39@gmail.com
+              </p>
 
-                  <p className="text-slate-600 text-sm truncate md:whitespace-normal">
-                    rishahermain39@gmail.com
-                  </p>
+            </div>
 
-                </div>
+            <div className="ml-auto shrink-0">
 
-              </div>
+              <FaArrowRight className="text-2xl text-orange-500 group-hover:translate-x-2 transition" />
 
-              <FaArrowRight className="text-orange-500 group-hover:translate-x-2 transition" />
+            </div>
 
-            </a>
+          </a>
 
             {/* LinkedIn */}
 

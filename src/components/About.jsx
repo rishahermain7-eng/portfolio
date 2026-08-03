@@ -56,66 +56,64 @@ function About() {
 
           <div className="grid grid-cols-2 gap-6">
 
-            <div className="bg-white rounded-3xl p-8 shadow-lg hover:-translate-y-2 transition">
+            <div className="bg-white rounded-3xl p-6 sm:p-8 shadow-lg hover:-translate-y-2 transition min-h-[210px] flex flex-col">
 
               <FaBriefcase className="text-orange-500 text-3xl mb-5"/>
 
-              <h3 className="font-bold text-xl">
+              <h3 className="font-bold text-lg sm:text-xl">
                 Experience
               </h3>
 
-              <p className="text-slate-500 mt-3">
+              <p className="text-slate-500 mt-auto text-lg">
                 2 Internships
               </p>
 
             </div>
 
-            <div className="bg-white rounded-3xl p-8 shadow-lg hover:-translate-y-2 transition">
+            <div className="bg-white rounded-3xl p-6 sm:p-8 shadow-lg hover:-translate-y-2 transition min-h-[210px] flex flex-col">
 
               <FaLaptopCode className="text-purple-500 text-3xl mb-5"/>
 
-              <h3 className="font-bold text-xl">
+              <h3 className="font-bold text-lg sm:text-xl">
                 Projects
               </h3>
 
-              <p className="text-slate-500 mt-3">
+              <p className="text-slate-500 mt-auto text-lg">
                 4 Completed
               </p>
 
             </div>
 
-            <div className="bg-white rounded-3xl p-8 shadow-lg hover:-translate-y-2 transition">
+            <div className="bg-white rounded-3xl p-6 sm:p-8 shadow-lg hover:-translate-y-2 transition min-h-[210px] flex flex-col">
 
               <FaLocationDot className="text-pink-500 text-3xl mb-5"/>
 
-              <h3 className="font-bold text-xl">
+              <h3 className="font-bold text-lg sm:text-xl">
                 Location
               </h3>
 
-              <p className="text-slate-500 mt-3">
+              <p className="text-slate-500 mt-auto text-lg">
                 Bengaluru
               </p>
 
             </div>
 
-            <div className="bg-white rounded-3xl p-8 shadow-lg hover:-translate-y-2 transition">
+            <div className="bg-white rounded-3xl p-6 sm:p-8 shadow-lg hover:-translate-y-2 transition min-h-[210px] flex flex-col">
 
               <FaBullseye className="text-yellow-500 text-3xl mb-5"/>
 
-              <h3 className="font-bold text-xl">
+              <h3 className="font-bold text-lg sm:text-xl">
                 Current Focus
               </h3>
 
-              <p className="text-slate-500 mt-3">
+              <p className="text-slate-500 mt-auto text-lg leading-7">
                 Full Stack Development
               </p>
 
             </div>
 
           </div>
-
-        </div>
-
+          </div>
       </div>
     </section>
   );
