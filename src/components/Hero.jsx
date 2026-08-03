@@ -74,21 +74,22 @@ function Hero() {
                           rounded-full bg-orange-200 blur-[90px] lg:blur-[110px] opacity-40">
           </div>
 
-          {/* Speech Bubble — made smaller/lighter so it doesn't compete with the avatar */}
+          {/* Speech Bubble — nudged further up/left so it stays clear of
+              the avatar's head as the avatar grows */}
           <div
             className="
               absolute
-              top-1 left-1
-              sm:top-2 sm:left-2
-              lg:top-4 lg:left-0
+              top-0 left-0
+              sm:-top-1 sm:-left-1
+              lg:top-2 lg:-left-2
               bg-white
               rounded-2xl
               shadow-lg
               border border-orange-100
               px-3 py-2.5
               sm:px-4 sm:py-3
-              max-w-[160px]
-              sm:max-w-[190px]
+              max-w-[150px]
+              sm:max-w-[180px]
               z-20
             "
           >
@@ -107,18 +108,18 @@ function Hero() {
 
           </div>
 
-          {/* Avatar — enlarged across all breakpoints */}
+          {/* Avatar — a bit larger again across all breakpoints */}
 
           <img
               src={avatar}
               alt=""
               className="
               relative z-10
-              w-[320px]
-              sm:w-[420px]
-              md:w-[500px]
-              lg:w-[620px]
-              xl:w-[700px]
+              w-[350px]
+              sm:w-[450px]
+              md:w-[530px]
+              lg:w-[650px]
+              xl:w-[730px]
               object-contain
               "
           />

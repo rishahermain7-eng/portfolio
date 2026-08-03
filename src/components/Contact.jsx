@@ -54,7 +54,7 @@ function Contact() {
                   Email
                 </h3>
 
-                <p className="text-slate-600 text-sm sm:text-base break-all">
+                <p className="text-slate-600 text-sm sm:text-base truncate">
                   rishahermain39@gmail.com
                 </p>
 
