@@ -74,49 +74,51 @@ function Hero() {
                           rounded-full bg-orange-200 blur-[90px] lg:blur-[110px] opacity-40">
           </div>
 
-          {/* Speech Bubble */}
+          {/* Speech Bubble — made smaller/lighter so it doesn't compete with the avatar */}
           <div
             className="
               absolute
-              top-2 left-2
-              sm:top-4 sm:left-4
-              lg:top-6 lg:left-0
+              top-1 left-1
+              sm:top-2 sm:left-2
+              lg:top-4 lg:left-0
               bg-white
-              rounded-3xl
-              shadow-xl
+              rounded-2xl
+              shadow-lg
               border border-orange-100
-              px-5 py-4
-              sm:px-6 sm:py-5
+              px-3 py-2.5
+              sm:px-4 sm:py-3
+              max-w-[160px]
+              sm:max-w-[190px]
               z-20
             "
           >
 
-            <h3 className="text-xl sm:text-2xl font-bold">
+            <h3 className="text-sm sm:text-base font-bold">
               Hello! 👋
             </h3>
 
-            <p className="text-slate-500 mt-2 leading-7">
+            <p className="text-slate-500 text-xs sm:text-sm mt-1 leading-5">
               Let's explore
               <br />
               my portfolio.
             </p>
 
-            <div className="absolute bottom-[-8px] left-10 w-5 h-5 bg-white rotate-45 border-r border-b border-orange-100"></div>
+            <div className="absolute bottom-[-6px] left-8 w-3.5 h-3.5 bg-white rotate-45 border-r border-b border-orange-100"></div>
 
           </div>
 
-          {/* Avatar */}
+          {/* Avatar — enlarged across all breakpoints */}
 
           <img
               src={avatar}
               alt=""
               className="
               relative z-10
-              w-[270px]
-              sm:w-[360px]
-              md:w-[430px]
-              lg:w-[540px]
-              xl:w-[620px]
+              w-[320px]
+              sm:w-[420px]
+              md:w-[500px]
+              lg:w-[620px]
+              xl:w-[700px]
               object-contain
               "
           />
