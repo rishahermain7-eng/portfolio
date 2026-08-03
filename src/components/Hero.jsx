@@ -12,7 +12,7 @@ function Hero() {
           "linear-gradient(135deg,#FFF8F4 0%,#FFF4EC 55%,#FDF6FF 100%)",
       }}
     >
-      <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-20 items-center">
+      <div className="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-16 lg:gap-20 items-center">
 
         {/* LEFT */}
 
@@ -28,7 +28,7 @@ function Hero() {
 
           </div>
 
-          <p className="text-orange-500 text-xl font-medium">
+          <p className="text-orange-500 text-lg sm:text-xl font-medium">
             Hello, I'm
           </p>
 
@@ -36,17 +36,17 @@ function Hero() {
             Risha Hermain
           </h1>
 
-          <h2 className="text-2xl lg:text-3xl mt-6 text-slate-700">
+          <h2 className="text-2xl sm:text-3xl mt-6 text-slate-700">
             Full Stack Developer
           </h2>
 
-          <p className="text-slate-600 leading-9 text-lg mt-8 max-w-xl">
+          <p className="text-slate-600 leading-8 text-base sm:text-lg mt-8 max-w-xl">
             Building production-ready web applications using
             React, Node.js, PostgreSQL, REST APIs and modern
             web technologies.
           </p>
 
-          <div className="flex flex-wrap gap-5 mt-10">
+          <div className="flex flex-col sm:flex-row gap-5 mt-10">
 
             <Button
               href={resume}
@@ -67,61 +67,69 @@ function Hero() {
         </div>
 
         {/* RIGHT */}
-        <div className="relative flex justify-center items-center mt-10 lg:mt-0">
+
+        <div className="relative flex justify-center items-center mt-14 lg:mt-0">
 
           {/* Glow */}
-          <div className="absolute w-[260px] h-[260px] sm:w-[330px] sm:h-[330px] lg:w-[430px] lg:h-[430px]
-                          rounded-full bg-orange-200 blur-[90px] lg:blur-[110px] opacity-40">
-          </div>
 
-          {/* Speech Bubble — nudged further up/left so it stays clear of
-              the avatar's head as the avatar grows */}
+          <div className="absolute w-[260px] h-[260px] sm:w-[360px] sm:h-[360px] lg:w-[500px] lg:h-[500px] rounded-full bg-orange-200 blur-[90px] lg:blur-[120px] opacity-40"></div>
+
+          {/* Speech Bubble */}
+
           <div
             className="
               absolute
-              top-0 left-0
-              sm:-top-1 sm:-left-1
-              lg:top-2 lg:-left-2
-              bg-white
-              rounded-2xl
-              shadow-lg
-              border border-orange-100
-              px-3 py-2.5
-              sm:px-4 sm:py-3
-              max-w-[150px]
-              sm:max-w-[180px]
               z-20
+              top-0
+              left-0
+              sm:left-2
+              lg:left-0
+              bg-white
+              rounded-3xl
+              shadow-xl
+              border
+              border-orange-100
+              px-5
+              py-4
+              sm:px-6
+              sm:py-5
             "
           >
 
-            <h3 className="text-sm sm:text-base font-bold">
+            <h3 className="text-xl sm:text-2xl font-bold text-slate-800">
               Hello! 👋
             </h3>
 
-            <p className="text-slate-500 text-xs sm:text-sm mt-1 leading-5">
+            <p className="text-slate-500 mt-2 leading-7 text-sm sm:text-base">
               Let's explore
               <br />
               my portfolio.
             </p>
 
-            <div className="absolute bottom-[-6px] left-8 w-3.5 h-3.5 bg-white rotate-45 border-r border-b border-orange-100"></div>
+            <div className="absolute bottom-[-8px] left-10 w-5 h-5 bg-white rotate-45 border-r border-b border-orange-100"></div>
 
           </div>
 
-          {/* Avatar — a bit larger again across all breakpoints */}
+          {/* Avatar */}
 
           <img
-              src={avatar}
-              alt=""
-              className="
-              relative z-10
-              w-[350px]
-              sm:w-[450px]
-              md:w-[530px]
-              lg:w-[650px]
-              xl:w-[730px]
+            src={avatar}
+            alt="Developer Avatar"
+            className="
+              relative
+              z-10
               object-contain
-              "
+              mt-10
+              sm:mt-12
+              lg:mt-0
+              ml-20
+              sm:ml-24
+              lg:ml-28
+              w-[280px]
+              sm:w-[380px]
+              lg:w-[620px]
+              xl:w-[680px]
+            "
           />
 
         </div>

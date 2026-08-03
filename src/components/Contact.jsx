@@ -1,7 +1,6 @@
 import {
   FaGithub,
   FaLinkedin,
-  FaArrowRight,
 } from "react-icons/fa";
 
 import {
@@ -9,7 +8,6 @@ import {
 } from "react-icons/hi";
 
 import SectionTitle from "./ui/SectionTitle";
-import resume from "../assets/resume/Risha-Hermain-Resume.pdf";
 
 function Contact() {
   return (
@@ -17,7 +15,7 @@ function Contact() {
       id="contact"
       className="py-28 bg-[#FFFDFB]"
     >
-      <div className="max-w-4xl mx-auto px-6">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6">
 
         <SectionTitle
           subtitle="GET IN TOUCH"
@@ -42,27 +40,21 @@ function Contact() {
               className="group flex items-center rounded-2xl bg-orange-50 hover:bg-orange-100 p-5 sm:p-6 transition-all duration-300"
             >
 
-              <div className="w-14 h-14 sm:w-20 sm:h-20 rounded-2xl sm:rounded-3xl bg-white shadow-md flex items-center justify-center shrink-0">
+              <div className="w-20 h-20 rounded-3xl bg-white shadow-md flex items-center justify-center shrink-0">
 
-                <HiOutlineMail className="text-2xl sm:text-3xl text-orange-500" />
+                <HiOutlineMail className="text-3xl text-orange-500" />
 
               </div>
 
-              <div className="ml-4 sm:ml-5 flex-1 min-w-0">
+              <div className="ml-5 flex-1 min-w-0">
 
-                <h3 className="text-lg sm:text-xl font-semibold text-slate-800">
+                <h3 className="text-xl font-semibold text-slate-800">
                   Email
                 </h3>
 
-                <p className="text-slate-600 text-sm sm:text-base truncate">
+                <p className="text-slate-600 text-[13px] sm:text-sm md:text-base break-all">
                   rishahermain39@gmail.com
                 </p>
-
-              </div>
-
-              <div className="ml-2 shrink-0">
-
-                <FaArrowRight className="text-xl sm:text-2xl text-orange-500 group-hover:translate-x-2 transition" />
 
               </div>
 
@@ -77,27 +69,21 @@ function Contact() {
               className="group flex items-center rounded-2xl bg-blue-50 hover:bg-blue-100 p-5 sm:p-6 transition-all duration-300"
             >
 
-              <div className="w-14 h-14 sm:w-20 sm:h-20 rounded-2xl sm:rounded-3xl bg-white shadow-md flex items-center justify-center shrink-0">
+              <div className="w-20 h-20 rounded-3xl bg-white shadow-md flex items-center justify-center shrink-0">
 
-                <FaLinkedin className="text-2xl sm:text-3xl text-blue-600" />
+                <FaLinkedin className="text-3xl text-blue-600" />
 
               </div>
 
-              <div className="ml-4 sm:ml-5 flex-1 min-w-0">
+              <div className="ml-5 flex-1">
 
-                <h3 className="text-lg sm:text-xl font-semibold text-slate-800">
+                <h3 className="text-xl font-semibold text-slate-800">
                   LinkedIn
                 </h3>
 
                 <p className="text-slate-600 text-sm sm:text-base">
                   Connect with me
                 </p>
-
-              </div>
-
-              <div className="ml-2 shrink-0">
-
-                <FaArrowRight className="text-xl sm:text-2xl text-blue-600 group-hover:translate-x-2 transition" />
 
               </div>
 
@@ -112,27 +98,21 @@ function Contact() {
               className="group flex items-center rounded-2xl bg-slate-100 hover:bg-slate-200 p-5 sm:p-6 transition-all duration-300"
             >
 
-              <div className="w-14 h-14 sm:w-20 sm:h-20 rounded-2xl sm:rounded-3xl bg-white shadow-md flex items-center justify-center shrink-0">
+              <div className="w-20 h-20 rounded-3xl bg-white shadow-md flex items-center justify-center shrink-0">
 
-                <FaGithub className="text-2xl sm:text-3xl text-slate-800" />
+                <FaGithub className="text-3xl text-slate-800" />
 
               </div>
 
-              <div className="ml-4 sm:ml-5 flex-1 min-w-0">
+              <div className="ml-5 flex-1">
 
-                <h3 className="text-lg sm:text-xl font-semibold text-slate-800">
+                <h3 className="text-xl font-semibold text-slate-800">
                   GitHub
                 </h3>
 
                 <p className="text-slate-600 text-sm sm:text-base">
                   View my repositories
                 </p>
-
-              </div>
-
-              <div className="ml-2 shrink-0">
-
-                <FaArrowRight className="text-xl sm:text-2xl text-slate-700 group-hover:translate-x-2 transition" />
 
               </div>
 
