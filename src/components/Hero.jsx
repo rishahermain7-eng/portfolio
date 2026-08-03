@@ -68,11 +68,11 @@ function Hero() {
 
         {/* RIGHT */}
 
-        <div className="relative flex justify-center items-center mt-14 lg:mt-0">
+        <div className="relative flex justify-center items-center mt-10 lg:mt-0 overflow-visible">
 
           {/* Glow */}
 
-          <div className="absolute w-[260px] h-[260px] sm:w-[360px] sm:h-[360px] lg:w-[500px] lg:h-[500px] rounded-full bg-orange-200 blur-[90px] lg:blur-[120px] opacity-40"></div>
+          <div className="absolute w-[300px] h-[300px] sm:w-[430px] sm:h-[430px] lg:w-[560px] lg:h-[560px] rounded-full bg-orange-200 blur-[100px] lg:blur-[130px] opacity-40"></div>
 
           {/* Speech Bubble */}
 
@@ -80,19 +80,31 @@ function Hero() {
             className="
               absolute
               z-20
-              top-0
-              left-0
-              sm:left-2
-              lg:left-0
+
+              top-6
+              left-2
+
+              sm:top-8
+              sm:left-4
+
+              lg:top-10
+              lg:left-2
+
               bg-white
               rounded-3xl
               shadow-xl
               border
               border-orange-100
+
               px-5
               py-4
+
               sm:px-6
               sm:py-5
+
+              max-w-[170px]
+              sm:max-w-[190px]
+              lg:max-w-[220px]
             "
           >
 
@@ -100,7 +112,7 @@ function Hero() {
               Hello! 👋
             </h3>
 
-            <p className="text-slate-500 mt-2 leading-7 text-sm sm:text-base">
+            <p className="text-sm sm:text-base text-slate-500 mt-2 leading-6">
               Let's explore
               <br />
               my portfolio.
@@ -119,16 +131,18 @@ function Hero() {
               relative
               z-10
               object-contain
-              mt-10
-              sm:mt-12
+
+              w-[340px]
+              sm:w-[440px]
+              lg:w-[650px]
+              xl:w-[720px]
+
+              mt-8
               lg:mt-0
-              ml-20
-              sm:ml-24
+
+              ml-12
+              sm:ml-20
               lg:ml-28
-              w-[280px]
-              sm:w-[380px]
-              lg:w-[620px]
-              xl:w-[680px]
             "
           />
 
