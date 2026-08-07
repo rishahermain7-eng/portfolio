@@ -65,7 +65,8 @@ function About() {
               </h3>
 
               <p className="text-slate-500 mt-auto text-lg">
-                2 Internships
+                2 
+                Internships
               </p>
 
             </div>
@@ -79,7 +80,8 @@ function About() {
               </h3>
 
               <p className="text-slate-500 mt-auto text-lg">
-                4 Projects
+                4 
+                Projects
               </p>
 
             </div>
