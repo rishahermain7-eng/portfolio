@@ -1,6 +1,6 @@
 import avatar from "../assets/images/avatar.png";
 import Button from "./ui/Button";
-import resume from "../assets/resume/Risha-Hermain-Resume.pdf";
+import resume from "../assets/resume/RishaHermain.Resume.pdf";
 
 function Hero() {
   return (
