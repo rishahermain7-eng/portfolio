@@ -79,7 +79,7 @@ function About() {
               </h3>
 
               <p className="text-slate-500 mt-auto text-lg">
-                4 Completed
+                4 Projects
               </p>
 
             </div>
