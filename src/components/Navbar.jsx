@@ -1,6 +1,6 @@
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 
-import resume from "../assets/resume/Risha-Hermain-Resume.pdf";
+import resume from "../assets/resume/RishaHermain.Resume.pdf";
 
 function Navbar() {
   return (
